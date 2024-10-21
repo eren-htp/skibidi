@@ -1,0 +1,194 @@
+header {
+    text-align: center;
+    margin-bottom: 0;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background: rgb(153,173,191);
+    margin: 0;
+    cursor: url('../img/mango.png'), auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+.side {
+    width: 15%;
+}
+.main {
+    width: 70%;
+    display: block;
+    margin-top: 0;
+}
+
+.main .head > img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.head {
+    background: #3359C6;
+    position: relative;
+}
+
+.ca-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .ca-text {
+        font-size: 16px;
+    }
+}
+
+.sub-head {
+    height: 60px;
+    width: 100%;
+    background-color: #21211F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: Corbel, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.sub-head span {
+    margin-right: 60px;
+    margin-left: 15px;
+}
+
+.sub-head span:last-of-type {
+    margin-right: auto;
+}
+
+.sub-head img {
+    margin-left: auto;
+}
+
+.sub-head span:last-child {
+    margin-right: 0;
+}
+
+.sub-head > span{
+    font-style: corbel;
+}
+
+/* New style for the "Home" span */
+.sub-head span:first-child {
+    background-color: gray;
+    padding: 18px 30px;
+}
+
+.priceChange, .crypto-news {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.priceChange {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.priceChange > span {
+    font-style: sans-serif;
+}
+
+.loss {
+    color: red;
+}
+
+.gain {
+    color: green;
+}
+
+.crypto-news {
+    padding: 20px 10px;
+}
+
+.crypto-news h2 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-image {
+    flex: 0 0 200px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.news-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.news-content h3 {
+    color: #2c3e50;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+}
+
+.news-content p {
+    color: #34495e;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-image {
+        flex: 0 0 150px;
+    }
+}
